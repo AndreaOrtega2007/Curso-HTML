@@ -1,0 +1,29 @@
+<script>
+    //Leer un número entero positivo y
+    //determinar si es de 1, 2, 3 o 4 dígitos.
+
+    var numero = 0;
+    numero = parseInt(prompt("ingrese un número entero positivo", 0));
+
+    if (numero >=0) {
+
+        if (numero >=100000){
+        document.writeln("El número tiene 5 o más cifras")
+        } 
+        if (numero>= 1000 && numero <= 9999){
+            document.writeln("El número tiene 4 cifras")
+        }
+        if(numero>=100 && numero <=999){
+            document.writeln("El número tiene 3 cifras")
+        }
+        if(numero>=10 && numero <=99){
+            document.writeln("El número tiene 2 cifras")
+        }
+        if(numero <=9){
+            document.writeln("El número tiene 1 cifra")
+        }    
+    } else{
+        document.writeln("Error: El número no es positivo");  
+    } 
+ 
+</script>

@@ -1,0 +1,25 @@
+<script>
+//Lea tres números y escriba un mensaje si 
+//los datos se escribieron en forma ordenada 
+//(ya sea descendente o ascendentemente) y si
+ //no es así que muestre el respectivo mensaje.
+    var numero1
+    var numero2
+    var numero3
+
+    numero1 = parseInt(prompt("digite un numero"));
+    numero2 = parseInt(prompt("digite un numero"));
+    numero3 = parseInt(prompt("digite un numero"));
+if (numero1<numero2 && numero2<numero3){
+    //Los números están en orden ascendente
+    document.writeln("Los numeros ingresados estan de forma acendentalmente");
+}else if ( numero1>numero2 && numero2>numero3){
+    //Los numeros estan en orden descendente
+    document.writeln("Los numeros ingresados estan de forma descendentemente");
+
+}else {
+    document.writeln("Los numeros ingresados estan de forma no ordenada");
+
+}
+
+</script>
